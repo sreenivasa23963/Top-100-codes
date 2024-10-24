@@ -1,0 +1,10 @@
+def muntiple_numer(num):
+    num1=0
+    for i in str(num):
+        num1 +=int(i)
+    if num1 % 3 == 0:
+        print("T")
+    else:
+        print("F")
+num=input()
+muntiple_numer(num)
