@@ -1,0 +1,12 @@
+start,end=map(int,input("Enter two numbers").split())
+armstrong_numbers=[]
+for num in range(start,end+1):
+    num_str=str(num)
+    num_digits=len(num_str)
+    sum_of_powers=sum(int(digit)**num_digits for digit in num_str)
+    if sum_of_powers==num:
+        armstrong_numbers.append(num)
+if armstrong_numbers:
+    print("Armstrong numbers in the range", armstrong_numbers)
+else:
+    print("No armstrong numbers found")
