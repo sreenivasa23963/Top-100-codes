@@ -1,0 +1,8 @@
+num=(int(input())) #Given Number is an Armstrong Number or Not
+sum1=str(num)
+digits=len(sum1)
+sum_digit= sum(int(digit)** digits for digit in sum1)
+if sum_digit==num:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
