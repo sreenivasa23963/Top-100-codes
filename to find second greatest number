@@ -1,0 +1,8 @@
+numbers = input("Enter numbers separated by spaces: ")
+unique_numbers = list(set(map(int, numbers.split())))
+unique_numbers.sort()
+
+if len(unique_numbers) < 2:
+    print("There is no second greatest number.")
+else:
+    print(f"The second greatest number is: {unique_numbers[-2]}")
